@@ -70,10 +70,10 @@ Durante este projeto, foram praticados:
 ## 📸 Screenshots
 
 ### Inserção e consulta de dados
-![Consultas SQL](prints/consultas.png)
+![Consultas SQL](tables.png)
 
-### Relacionamento entre tabelas
-![INNER JOIN](prints/inner-join.png)
+### Inserção e consulta de dados 2
+![Consultas SQL](tables2.png)
 
 ---
 
