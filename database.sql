@@ -4,7 +4,7 @@ CREATE TABLE alunos (
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
     gender TEXT NOT NULL,
-    patologia TEXT NOT NULL
+    area_interesse TEXT NOT NULL
 );
 
 CREATE TABLE professores (
@@ -44,16 +44,16 @@ SHOW TABLES;
 
 -- INSERÇÃO DE DADOS
 
-INSERT INTO alunos VALUES (1, 'Djalma', 'M', 'Cleptomaniaco');
-INSERT INTO alunos VALUES (2, 'Fátima', 'F', 'Mitomania');
-INSERT INTO alunos VALUES (3, 'Chalita', 'M', 'Bordeline');
-INSERT INTO alunos VALUES (4, 'Suelli', 'F', 'Depressão');
-INSERT INTO alunos VALUES (5, 'Renan', 'M', 'Ansiedade Generalizada');
-INSERT INTO alunos VALUES (6, 'Priscila', 'F', 'Narcizismo');
-INSERT INTO alunos VALUES (7, 'Armani', 'M', 'Autismo');
-INSERT INTO alunos VALUES (8, 'Samara', 'F', 'Bordeline');
-INSERT INTO alunos VALUES (9, 'Joaquim', 'M', 'Bordeline');
-INSERT INTO alunos VALUES (10, 'Beatriz', 'F', 'Mitomania');
+INSERT INTO alunos VALUES (1, 'Djalma', 'M', 'Tecnologia');
+INSERT INTO alunos VALUES (2, 'Fátima', 'F', 'Administração');
+INSERT INTO alunos VALUES (3, 'Chalita', 'M', 'Design');
+INSERT INTO alunos VALUES (4, 'Suelli', 'F', 'Saúde');
+INSERT INTO alunos VALUES (5, 'Renan', 'M', 'Engenharia');
+INSERT INTO alunos VALUES (6, 'Priscila', 'F', 'Comunicação');
+INSERT INTO alunos VALUES (7, 'Armani', 'M', 'Informática');
+INSERT INTO alunos VALUES (8, 'Samara', 'F', 'Psicologia');
+INSERT INTO alunos VALUES (9, 'Joaquim', 'M', 'Gastronomia');
+INSERT INTO alunos VALUES (10, 'Beatriz', 'F', 'Educação');
 
 INSERT INTO professores VALUES (1, 'Ana', 'F', 'Moda');
 INSERT INTO professores VALUES (2, 'Alan', 'M', 'Advocacia');
@@ -80,7 +80,7 @@ INSERT INTO cursos VALUES (10, 'CCP', 'N', 'Caro');
 
 -- CONSULTAS (SELECT)
 
-SELECT * FROM alunos WHERE patologia = 'Bordeline';
+SELECT * FROM alunos WHERE area_interesse = 'Tecnologia';
 
 SELECT * FROM professores WHERE curso = 'Moda';
 
